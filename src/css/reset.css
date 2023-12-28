@@ -1,4 +1,8 @@
 /* Reset styles */
+*{
+  box-sizing: border-box;
+}
+
 h1,
 h2,
 h3,
@@ -26,6 +30,7 @@ a {
 
 button {
   cursor: pointer;
+  padding: 0;
 }
 
 img {

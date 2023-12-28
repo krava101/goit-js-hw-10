@@ -1,0 +1,92 @@
+.timer-wrapper{
+    padding: 20px;
+}
+
+.timer-wrapper input{
+    width: 272px;
+    height: 40px;
+    border-radius: 4px;
+    border: 1px solid #808080;
+    padding: 8px 16px;
+
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+}
+
+.timer-wrapper input:hover,
+.timer-wrapper input:focus{
+    border-color: #000;
+    outline: none;
+}
+
+.timer-wrapper input:active{
+    border-color: #4E75FF;
+    color: #000;
+}
+
+.timer-wrapper input:disabled{
+    border-color: #808080;
+    color: #808080;
+}
+
+.timer-wrapper button{
+    width: 75px;
+    height: 41px;
+    border-radius: 8px;
+    border: none;
+    background-color: #4E75FF;
+
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+}
+
+.timer-wrapper button:disabled{
+    pointer-events: none;
+    background-color: #CFCFCF;
+    color: #989898;
+}
+
+.timer-wrapper button:hover,
+.timer-wrapper button:focus{
+    background-color: #6C8CFF;
+}
+
+.timer{
+    display: flex;
+    gap: 24px;
+    width: 346px;
+    margin-top: 32px;
+    text-align: center;
+}
+
+.timer span{
+    display: block;
+}
+
+.value{
+    font-size: 40px;
+    line-height: 1.2;
+    letter-spacing: 0.04em;
+}
+
+.label{
+    font-size: 16px;
+    line-height: 1.5;
+    text-transform: uppercase;
+}
+
+.iziToast>button.iziToast-close {
+    filter: invert(1);
+    background-size: 12px;
+    height: 60px;
+}
+
+.iziToast-icon{
+    filter: invert(1);
+    background-size: 12px;
+}
