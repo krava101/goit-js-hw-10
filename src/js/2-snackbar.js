@@ -34,12 +34,12 @@ const createPromis = (state, delay) =>{
 	.catch(er => er);
 }
 
-const formSubmit = () => {
+const formSubmit = (event) => {
   event.preventDefault();
   const state = event.currentTarget.state.value;
   const delay = event.currentTarget.delay.value;
   createPromis(state, delay);
-  form.reset();
+  event.currentTarget.reset();
 }
 
 form.addEventListener("submit", formSubmit)

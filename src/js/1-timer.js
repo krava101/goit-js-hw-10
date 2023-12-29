@@ -57,7 +57,7 @@ function convertMs(ms){
 
 const startBtnClick = () => {
 	const intervalId = setInterval(() => {
-		const timeInterval = userSelectedDate - new Date();
+		const timeInterval = userSelectedDate - Date.now();
 		if (timeInterval < 1000) {
 			clearInterval(intervalId);
 			dateInput.disabled = false;
@@ -71,7 +71,7 @@ const startBtnClick = () => {
 
 
 function toStartTimer() {
-  const currentDate = new Date();
+  const currentDate = Date.now();
 	const timeInterval = userSelectedDate - currentDate;
   if (timeInterval < 0) {
 		startBtn.disabled = true;
